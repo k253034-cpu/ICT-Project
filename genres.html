@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMate - Genres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>CineMate</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="genres.html">Genres</a></li>
+            <li><a href="suggest.html">Suggest</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Browse by Genre</h2>
+
+        <div class="filter-bar">
+            <select id="genreFilter" onchange="filterMovies()">
+                <option value="all">All</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="horror">Horror</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="thriller">Thriller</option>
+            </select>
+
+            <input type="text" id="searchBar" placeholder="Search Movie..." onkeyup="searchMovies()">
+        </div>
+
+        <div class="movie-grid" id="movieGrid">
+            <div class="movie-card" data-genre="comedy" data-title="The Dictator">
+                <img src="dictator.jpg">
+                <h3>The Dictator</h3>
+            </div>
+            <div class="movie-card" data-genre="comedy" data-title="Dumb and Dumber">
+                <img src="dumb.jpg">
+                <h3>Dumb & Dumber</h3>
+            </div>
+            <div class="movie-card" data-genre="comedy" data-title="Rush Hour">
+                <img src="rush.jpg">
+                <h3>Rush Hour</h3>
+            </div>
+            <div class="movie-card" data-genre="horror" data-title="sijjin">
+                <img src="sijjin.jpg">
+                <h3>Sijjin</h3>
+            </div>
+            <div class="movie-card" data-genre="horror" data-title="It">
+                <img src="it.jpg">
+                <h3>It</h3>
+            </div>
+            <div class="movie-card" data-genre="horror" data-title="Scream IV">
+                <img src="scream.jpg">
+                <h3>Scream IV</h3>
+            </div>
+            <div class="movie-card" data-genre="sci-fi" data-title="Venom">
+                <img src="venom.jpg">
+                <h3>Venom</h3>
+            </div>
+            <div class="movie-card" data-genre="sci-fi" data-title="Venom 2">
+                <img src="venom2.jpg">
+                <h3>Venom: Let There Be Carnage</h3>
+            </div>
+            <div class="movie-card" data-genre="sci-fi" data-title="venom 3">
+                <img src="venom3.jpg">
+                <h3>Venom: The Last Dance</h3>
+            </div>
+            <div class="movie-card" data-genre="thriller" data-title="Carry On">
+                <img src="carry.jpg">
+                <h3>Carry On</h3>
+            </div>
+            <div class="movie-card" data-genre="thriller" data-title="Shutter Island">
+                <img src="shutter.jpg">
+                <h3>Shutter Island</h3>
+            </div>
+
+            <div class="movie-card" data-genre="thriller" data-title="John Wick">
+                <img src="JohnWick.jpg">
+                <h3>John Wick</h3> 
+            </div>
+            <div class="movie-card" data-genre="action" data-title="Matrix">
+                <img src="matrix.jpg">
+                <h3>The Matrix</h3>
+            </div>
+            <div class="movie-card" data-genre="thriller" data-title="The Dark Knight">
+                <img src="thedarkknight.jpg">
+                <h3>The Dark Knight</h3>
+            </div>
+            <div class="movie-card" data-genre="action" data-title="Avengers">
+                <img src="Avengers.jpg">
+                <h3>Avengers: EndGames</h3>
+            </div>
+            <div class="movie-card" data-genre="action" data-title="Mad Max Fury Road">
+                <img src="action1.jpg">
+                <h3>Mad Max: Fury Road</h3>
+            </div>
+            <div class="movie-card" data-genre="action" data-title="The Dark Knight">
+                <img src="the dark knight.jpg">
+                <h3>The Dark Knight</h3>
+            </div>
+            <div class="movie-card" data-genre="action" data-title="Joker">
+                <img src="joker.jpg">
+                <h3>Joker</h3>
+            </div>
+
+            <div class="movie-card" data-genre="comedy" data-title="Jumanji">
+                <img src="comedy1.jpg">
+                <h3>Jumanji</h3>
+            </div>
+            <div class="movie-card" data-genre="comedy" data-title="Breaking Bad">
+                <img src="breakingbad.jpg">
+                <h3> Breaking Bad</h3>
+            </div>
+
+            <div class="movie-card" data-genre="horror" data-title="The Conjuring">
+                <img src="horror1.jpg">
+                <h3>The Conjuring</h3>
+            </div>
+
+            <div class="movie-card" data-genre="sci-fi" data-title="Interstellar">
+                <img src="scifi1.jpg">
+                <h3>Interstellar</h3>
+            </div>
+            <div class="movie-card" data-genre="sci-fi" data-title="Inception">
+                <img src="Inception.jpg">
+                <h3>Inception</h3>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

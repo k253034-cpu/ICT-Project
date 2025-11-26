@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CineMate - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <h1>CineMate</h1>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="genres.html">Genres</a></li>
+      <li><a href="suggest.html">Suggest</a></li>
+    </ul>
+
+    <div id="searchContainer">
+      <input type="text" id="searchBar" placeholder="Search movies..." />
+      <span id="clearSearch">✖</span>
+    </div>
+  </nav>
+
+  <header class="hero-slider">
+    <div class="slide fade" style="background-image: url('banner1.jpg');"></div>
+    <div class="slide fade" style="background-image: url('banner2.jpg');"></div>
+    <div class="slide fade" style="background-image: url('banner3.jpg');"></div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-text">
+      <h2>Unlimited Movies with Endless Entertainment.</h2>
+      <p>Discover Movies that matches your taste.</p>
+
+      <button class="hero-btn" id="randomBtn">🎬 Random Movie</button>
+    </div>
+  </header>
+
+  <section class="spotlight-section">
+    <h2>Spotlight This Week</h2>
+
+    <button class="spotlight-arrow left" id="leftArrow">‹</button>
+    <button class="spotlight-arrow right" id="rightArrow">›</button>
+
+    <div class="spotlight-wrapper">
+        <div class="spotlight-row" id="spotRow">
+
+            <div class="spot-card movie"><img src="action1.jpg"><h3>Mad Max: Fury Road</h3></div>
+            <div class="spot-card movie"><img src="horror1.jpg"><h3>The Conjuring</h3></div>
+            <div class="spot-card movie"><img src="scifi1.jpg"><h3>Interstellar</h3></div>
+            <div class="spot-card movie"><img src="comedy1.jpg"><h3>Jumanji</h3></div>
+            <div class="spot-card movie"><img src="frankstein.jpg"><h3>Frankenstein</h3></div>
+            <div class="spot-card movie"><img src="dictator.jpg"><h3>The Dictator</h3></div>
+           
+
+        </div>
+    </div>
+</section>
+
+
+  <section class="famous-drama">
+    <h2>Famous Drama Series</h2>
+    <div class="famous-drama-row" id="dramaRow">
+      <!-- Add 10 series; sample first set of 5 visible -->
+      <div class="famous-drama movie" data-title="Game Of Thrones">
+        <div class="poster-wrap">
+          <img src="got.jpg" alt="Game Of Thrones">
+        </div>
+        <h3>Game Of Thrones</h3>
+      </div>
+
+      <div class="famous-drama movie" data-title="Breaking Bad">
+        <div class="poster-wrap">
+          <img src="breaking bad.jpg" alt="Breaking Bad">
+        </div>
+        <h3>Breaking Bad</h3>
+      </div>
+
+      <div class="famous-drama movie" data-title="Stranger Things">
+        <div class="poster-wrap">
+          <img src="strangerth.jpg" alt="Stranger Things">
+        </div>
+        <h3>Stranger Things</h3>
+      </div>
+
+      <div class="famous-drama movie" data-title="The Crown">
+        <div class="poster-wrap">
+          <img src="thecrown.jpg" alt="The Crown">
+        </div>
+        <h3>The Crown</h3>
+      </div>
+
+      <div class="famous-drama movie" data-title="Sherlock">
+        <div class="poster-wrap">
+          <img src="sherlock.jpg" alt="Sherlock">
+        </div>
+        <h3>Sherlock</h3>
+      </div>
+
+      <!-- Add the other 5 posters (they can be hidden initially and appear when arrow clicked if you want) -->
+    </div>
+  </section>
+<!-- Random Movie POPUP -->
+<div id="moviePopup" class="popup">
+    <div class="popup-content">
+        <span id="popupClose" class="close">&times;</span>
+        <img id="popupImage" src="" alt="">
+        <h3 id="popupTitle"></h3>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+  <script src="script.js"></script>
+  <!-- RANDOM MOVIE POPUP MODAL -->
+<div id="movieModal" class="modal">
+  <span id="closeModal" class="close-btn">&times;</span>
+
+  <div class="modal-content">
+    <img id="modalImg">
+    <p id="modalTitle"></p>
+  </div>
+</div>
+<!-- RANDOM MOVIE POPUP MODAL -->
+<div id="movieModal" class="modal">
+  <span id="closeModal" class="close-btn">&times;</span>
+
+  <div class="modal-content">
+    <img id="modalImg" alt="">
+    <p id="modalTitle"></p>
+  </div>
+</div>
+
+
+</body>
+</html>

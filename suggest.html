@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMate - Suggest Movie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>CineMate</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="genres.html">Genres</a></li>
+            <li><a class="active" href="suggest.html">Suggest</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Suggest a Movie</h2>
+
+        <form class="suggest-form" onsubmit="submitForm(event)">
+            <label>Movie Name:</label>
+            <input type="text" id="movieName" required>
+
+            <label>Genre:</label>
+            <input type="text" id="movieGenre" required>
+
+            <label>Your Message:</label>
+            <textarea id="movieMsg" required></textarea>
+
+            <button type="submit" class="glow-btn">Submit</button>
+        </form>
+
+        <h3>Previous Suggestions:</h3>
+        <ul id="suggestList"></ul>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
